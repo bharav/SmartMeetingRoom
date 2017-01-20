@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMeetingRoom.Common", "
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "SmartMeetingRoom.Azure", "SmartMeetingRoom.Azure\SmartMeetingRoom.Azure.deployproj", "{F54DC3E3-8E06-4D58-827B-EC10ADD88FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMeetingRoom.Azure.Initializer", "SmartMeetingRoom.Azure.Initializer\SmartMeetingRoom.Azure.Initializer.csproj", "{43410A19-BE33-4BC4-8B34-4D65BF412770}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMeetingRoom.Azure.Initializer", "src\SmartMeetingRoom.Azure.Initializer\SmartMeetingRoom.Azure.Initializer.csproj", "{D1BCF1DB-E635-4A20-A2AD-B13C867DB23C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +36,10 @@ Global
 		{F54DC3E3-8E06-4D58-827B-EC10ADD88FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F54DC3E3-8E06-4D58-827B-EC10ADD88FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F54DC3E3-8E06-4D58-827B-EC10ADD88FA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43410A19-BE33-4BC4-8B34-4D65BF412770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43410A19-BE33-4BC4-8B34-4D65BF412770}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43410A19-BE33-4BC4-8B34-4D65BF412770}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43410A19-BE33-4BC4-8B34-4D65BF412770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BCF1DB-E635-4A20-A2AD-B13C867DB23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BCF1DB-E635-4A20-A2AD-B13C867DB23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BCF1DB-E635-4A20-A2AD-B13C867DB23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BCF1DB-E635-4A20-A2AD-B13C867DB23C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +48,5 @@ Global
 		{1CA677E0-EE7B-45AB-87F4-512FD6A14797} = {9716091D-7406-4C51-8BE0-853E923D4697}
 		{3CC7BB6E-7915-4D54-A244-12F371CBAD01} = {9716091D-7406-4C51-8BE0-853E923D4697}
 		{F54DC3E3-8E06-4D58-827B-EC10ADD88FA0} = {9716091D-7406-4C51-8BE0-853E923D4697}
-		{43410A19-BE33-4BC4-8B34-4D65BF412770} = {9716091D-7406-4C51-8BE0-853E923D4697}
 	EndGlobalSection
 EndGlobal

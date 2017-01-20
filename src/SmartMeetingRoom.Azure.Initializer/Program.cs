@@ -110,4 +110,4 @@ namespace SmartMeetingRoom.Azure.Initializer
         }
     }
 }
-}
+
