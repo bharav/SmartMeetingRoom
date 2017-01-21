@@ -3,13 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SmartMeetingRoom.Common.DTO;
+using SmartMeetingRoom.Common.Services;
+
+// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SmartMeetingRoom.Backend.Controllers
 {
-    [Route("api/[controller]")]
-    public class ValuesController : Controller
+
+    
+    public class EmployeeController : Controller
     {
-        // GET api/values
+        private DocumentDbService _ddbService;
+
+        public EmployeeController(DocumentDbService ddBServices)
+        {
+            _ddbService = ddBServices;
+        }
+        [Route("api/employee")]
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -23,10 +34,15 @@ namespace SmartMeetingRoom.Backend.Controllers
             return "value";
         }
 
-        // POST api/values
+        [Route("api/employee")]
         [HttpPost]
-        public void Post([FromBody]string value)
+        public async Task<IActionResult> Register([FromBody]Employee value)
         {
+            await _ddbService.SaveAsync(value);
+            HttpContext.Response.StatusCode = 201;
+            return Json(new
+            {
+            });
         }
 
         // PUT api/values/5

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using SmartMeetingRoom.Common;
+using SmartMeetingRoom.Common.Services;
 
 namespace SmartMeetingRoom.Backend
 {
@@ -36,7 +38,8 @@ namespace SmartMeetingRoom.Backend
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-
+            services.AddTransient<DocumentDbService, DocumentDbService>();
+            //services.AddTransient<IAppConfiguration,AppConfiguration>();
             services.AddMvc();
         }
 

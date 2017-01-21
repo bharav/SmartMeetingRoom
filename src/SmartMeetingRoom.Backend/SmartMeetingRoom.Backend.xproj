@@ -16,5 +16,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ApplicationInsightsResourceId>/subscriptions/566f4dae-cd40-4cf0-ac6e-c33574339438/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/SmartMeetingRoom.Backend</ApplicationInsightsResourceId>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartMeetingRoom.Common\SmartMeetingRoom.Common.csproj" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
