@@ -242,3 +242,4 @@ ModelManifest.xml
 .fake/
 /src/SmartMeetingRoom.Azure.Initializer/App.config
 /SmartMeetingRoom.WebJob/App.config
+/SmartMeetingRoom.WebJob/App - Copy.config
