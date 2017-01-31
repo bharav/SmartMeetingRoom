@@ -3,7 +3,7 @@ using SmartMeetingRoom.Common;
 
 namespace SmartMeetingRoom.Backend
 {
-    internal class AppConfiguration : IAppConfiguration
+    public class AppConfiguration : IAppConfiguration
     {
         public AppConfiguration(IConfigurationRoot configuration)
         {
@@ -14,6 +14,7 @@ namespace SmartMeetingRoom.Backend
             EmployeesCollectionName = configuration["DocumentDb:employeeCollection"];
             CalendersCollectionName = configuration["DocumentDb:calenderCollection"];
             IotHubConnectionString = configuration["IotHub:connectionString"];
+            StorageConnectionString = configuration["Storage:connectionString"];
         }
 
         public string Endpoint { get; }
@@ -23,5 +24,6 @@ namespace SmartMeetingRoom.Backend
         public string EmployeesCollectionName { get; }
         public string CalendersCollectionName { get; }
         public string IotHubConnectionString { get; }
+        public string StorageConnectionString { get; }
     }
 }

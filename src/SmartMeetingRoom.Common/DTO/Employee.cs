@@ -12,6 +12,8 @@ namespace SmartMeetingRoom.Common.DTO
         [JsonProperty(PropertyName="id")]
         public string Id { get; set; }
 
+        public string EmpName { get; set; }
+
         public string PersonId { get; set; }
 
         public string BlobName { get; set; }

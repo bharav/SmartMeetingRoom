@@ -5,34 +5,16 @@ namespace SmartMeetingRoom.Common.DTO
 {
     public class Device
     {
-        private string _id;
 
-        public string id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        public string id{get; set;}
 
-        [JsonIgnore]
-        public string DeviceId
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        public string DeviceId { get; set; }
 
         public string MeetingRoomId { get; set; }
 
-        public List<DeviceCamera> Cameras { get; set; }
+        public string CameraId { get; set; }
 
-        public Device()
-        {
-
-        }
-
-        public Device(string deviceId)
-        {
-            DeviceId = deviceId;
-            Cameras = new List<DeviceCamera>();
-        }
+        public double Confidence { get; set; }
+       
     }
 }

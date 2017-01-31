@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="SmartMeetingRoom.CaptureApp.NewUserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartMeetingRoom.CaptureApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="682.953" Width="363.436">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark" RenderTransformOrigin="0.526,0.328">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*" />
+            <RowDefinition Height="233*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BackButton" Content="Back" Grid.Column="0" HorizontalAlignment="Center" Margin="0,32,0,0"  VerticalAlignment="Top" FontSize="18" Click="BackButton_Click" Height="36" Width="45"/>
+
+        <StackPanel Margin="0, 10" Grid.Row="0" Grid.Column="1">
+            <CaptureElement x:Name='WebcamFeed' Loaded="WebcamFeed_Loaded" Visibility="Visible"/>
+            <Image x:Name="IdPhotoControl" Visibility="Visible" />
+        </StackPanel>
+        <Grid x:Name="DisabledFeedGrid" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="0*" />
+            </Grid.RowDefinitions>
+            <Rectangle Margin="10,10,10,0" Stroke="White" StrokeThickness="4"/>
+            <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/CameraIcon.png" Margin="135,91,135,83"/>
+        </Grid>
+
+        <Grid x:Name="UserNameGrid" Margin="40,11.333,0,10" Grid.Row="1" HorizontalAlignment="Left" Width="270" Grid.ColumnSpan="2" Visibility="Visible">
+            <TextBox x:Name="UserNameBox" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Margin="41,18,45,391" PlaceholderText="Photo ID Name (ex: John Doe)" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="UserDeptBox" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Margin="39,59,46,350" PlaceholderText="User Department Name" Grid.ColumnSpan="2"/>
+            <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Click="ConfirmButton_Click" Margin="57,116,78,324" Width="135"/>
+            <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Click="CancelButton_Click" Margin="56,162,77,278" Width="137"/>
+        </Grid>
+    </Grid>
+
+</Page>

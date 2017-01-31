@@ -11,5 +11,6 @@ namespace SmartMeetingRoom.Common
         string EmployeesCollectionName { get; }
         string CalendersCollectionName { get; }
         string IotHubConnectionString { get; }
+        string StorageConnectionString { get; }
     }
 }

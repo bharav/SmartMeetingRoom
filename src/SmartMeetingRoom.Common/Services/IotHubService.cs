@@ -10,9 +10,9 @@ namespace SmartMeetingRoom.Common.Services
     {
         private readonly AzureDevices.RegistryManager _registryManager;
 
-        public IotHubService(IAppConfiguration configuration)
+        public IotHubService(IAppConfiguration config)
         {
-            _registryManager = AzureDevices.RegistryManager.CreateFromConnectionString(configuration.IotHubConnectionString);
+            _registryManager = AzureDevices.RegistryManager.CreateFromConnectionString(config.IotHubConnectionString);
         }
 
         public async Task<AzureDevices.Device> RegisterDevice(Device device)

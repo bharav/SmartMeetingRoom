@@ -39,7 +39,10 @@ namespace SmartMeetingRoom.Backend
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
             services.AddTransient<DocumentDbService, DocumentDbService>();
-            //services.AddTransient<IAppConfiguration,AppConfiguration>();
+            services.AddTransient(c => Configuration);
+            services.AddTransient<IConfiguration>(c => Configuration);
+            services.AddTransient<IAppConfiguration,AppConfiguration>();
+            services.AddTransient<IotHubService, IotHubService>();
             services.AddMvc();
         }
 
