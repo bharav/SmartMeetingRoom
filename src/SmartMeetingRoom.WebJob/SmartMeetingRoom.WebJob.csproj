@@ -125,7 +125,7 @@
     <None Include="Properties\webjob-publish-settings.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\SmartMeetingRoom.Common\SmartMeetingRoom.Common.csproj">
+    <ProjectReference Include="..\SmartMeetingRoom.Common\SmartMeetingRoom.Common.csproj">
       <Project>{3cc7bb6e-7915-4d54-a244-12f371cbad01}</Project>
       <Name>SmartMeetingRoom.Common</Name>
     </ProjectReference>
