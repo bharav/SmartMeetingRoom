@@ -20,11 +20,11 @@ Azure Resource Manager is used to setup **Azure Services**. Download SmartMeetin
 
 To create project right click on the project and click **Deploy**
 
-![1.png](/SmartMeetingRoom/1.png "Deploy Azure Services")
+![1.png](/blob/master/SmartMeetingRoom/1.png "Deploy Azure Services")
 
 All services will be created on deployment the above project. Your Azure protal will look like below 
 
-![2.PNG](/SmartMeetingRoom/2.PNG "Azure Services")
+![2.PNG](/blob/master/SmartMeetingRoom/2.PNG "Azure Services")
 
 
 
@@ -41,7 +41,7 @@ Document Collections and faceapi person group needs to be created for future use
 
 Flow and architecture diagram for this solution is given below
 
-![3.png](/SmartMeetingRoom/3.png "Solution Architecture")
+![3.png](/blob/master/SmartMeetingRoom/3.png "Solution Architecture")
 
 **Note**: Xamarin application is a not a part of this solution 
 
@@ -375,7 +375,7 @@ Azure WebJob is created for processing message from service bus message queue. B
 ```
 
 To Deploy above project as webjob right click on project and select "Publish as webjob". 
-![4.png](/SmartMeetingRoom/4.png "WebJob")
+![4.png](/blob/master/SmartMeetingRoom/4.png "WebJob")
 
  
 ##Common Services##
@@ -395,7 +395,7 @@ These services are injected as an when required using **dependency injection**.
 ASP.Net Core API has been created for consuming data from documentDB and azure storage. These api can be called without any authentication using REST API "Get" verb. To configure the connection strings and Azure storage appsettings.json file needs to edited in **SmartMeetingRoom.Backend** project file. 
 
 To deploy this project as azure webapp right click on project and click **Publish** 
-![5.png](/SmartMeetingRoom/5.png "Publish")
+![5.png](/blob/master/blob/master/SmartMeetingRoom/5.png "Publish")
 
 
 
