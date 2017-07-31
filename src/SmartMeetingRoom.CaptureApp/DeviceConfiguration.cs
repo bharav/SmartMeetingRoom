@@ -39,7 +39,7 @@ namespace SmartMeetingRoom.CaptureApp
                     {
                         if (string.IsNullOrEmpty(_deviceKey))
                         {
-                            _deviceKey = "2uhUYY07LDtnSyHCJv+1G9QiJzstjk74qg73GWdvsi4=";
+                            _deviceKey = "9UL5zh8dXyN7/zHsIP9Q1eWI64sCXGbpFUc1pb5Vy9I=";
                         }
                     }
                 }

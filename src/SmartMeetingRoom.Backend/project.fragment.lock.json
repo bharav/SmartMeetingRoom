@@ -5,7 +5,7 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.5.2",
       "compile": {
-        "bin/Debug/SmartMeetingRoom.Common.dll": {}
+        "bin/Release/SmartMeetingRoom.Common.dll": {}
       },
       "runtime": {
         "../../packages/DotNetty.Buffers-signed.0.3.2/lib/net45/DotNetty.Buffers.dll": {},
@@ -16,28 +16,31 @@
         "../../packages/EnterpriseLibrary.TransientFaultHandling.6.0.1304.0/lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {},
         "../../packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.dll": {},
         "../../packages/Microsoft.AspNet.WebApi.Core.5.2.3/lib/net45/System.Web.Http.dll": {},
-        "../../packages/Microsoft.Azure.Amqp.2.0.3/lib/net45/Microsoft.Azure.Amqp.dll": {},
-        "../../packages/Microsoft.Azure.Devices.1.2.1/lib/net451/Microsoft.Azure.Devices.dll": {},
-        "../../packages/Microsoft.Azure.Devices.Shared.1.0.5/lib/net45/Microsoft.Azure.Devices.Shared.dll": {},
-        "../../packages/Microsoft.Azure.DocumentDB.1.11.2/lib/net45/Microsoft.Azure.Documents.Client.dll": {},
+        "../../packages/Microsoft.Azure.Amqp.2.0.6/lib/net45/Microsoft.Azure.Amqp.dll": {},
+        "../../packages/Microsoft.Azure.Devices.1.2.6/lib/net451/Microsoft.Azure.Devices.dll": {},
+        "../../packages/Microsoft.Azure.Devices.Shared.1.0.11/lib/net45/Microsoft.Azure.Devices.Shared.dll": {},
+        "../../packages/Microsoft.Azure.DocumentDB.1.14.1/lib/net45/Microsoft.Azure.Documents.Client.dll": {},
         "../../packages/Microsoft.Azure.KeyVault.Core.2.0.4/lib/net45/Microsoft.Azure.KeyVault.Core.dll": {},
-        "../../packages/Microsoft.Data.Edm.5.8.1/lib/net40/Microsoft.Data.Edm.dll": {},
-        "../../packages/Microsoft.Data.OData.5.8.1/lib/net40/Microsoft.Data.OData.dll": {},
-        "../../packages/Microsoft.Data.Services.Client.5.8.1/lib/net40/Microsoft.Data.Services.Client.dll": {},
-        "../../packages/Microsoft.ProjectOxford.Face.1.2.1.2/lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Microsoft.ProjectOxford.Face.dll": {},
-        "../../packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.dll": {},
+        "../../packages/Microsoft.Data.Edm.5.8.2/lib/net40/Microsoft.Data.Edm.dll": {},
+        "../../packages/Microsoft.Data.OData.5.8.2/lib/net40/Microsoft.Data.OData.dll": {},
+        "../../packages/Microsoft.Data.Services.Client.5.8.2/lib/net40/Microsoft.Data.Services.Client.dll": {},
+        "../../packages/Microsoft.Net.Http.2.2.29/lib/net45/System.Net.Http.Extensions.dll": {},
+        "../../packages/Microsoft.Net.Http.2.2.29/lib/net45/System.Net.Http.Primitives.dll": {},
+        "../../packages/Microsoft.ProjectOxford.Common.1.0.324/lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.ProjectOxford.Common.dll": {},
+        "../../packages/Microsoft.ProjectOxford.Face.1.3.0/lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Microsoft.ProjectOxford.Face.dll": {},
+        "../../packages/Newtonsoft.Json.10.0.2/lib/net45/Newtonsoft.Json.dll": {},
         "../../packages/PCLCrypto.2.0.147/lib/net45/PCLCrypto.dll": {},
-        "../../packages/PInvoke.BCrypt.0.3.152/lib/net40/PInvoke.BCrypt.dll": {},
-        "../../packages/PInvoke.Kernel32.0.3.152/lib/net40/PInvoke.Kernel32.dll": {},
-        "../../packages/PInvoke.NCrypt.0.3.152/lib/net40/PInvoke.NCrypt.dll": {},
-        "../../packages/PInvoke.Windows.Core.0.3.152/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll": {},
-        "../../packages/System.Spatial.5.8.1/lib/net40/System.Spatial.dll": {},
-        "../../packages/Validation.2.3.7/lib/dotnet/Validation.dll": {},
-        "../../packages/WindowsAzure.Storage.8.0.1/lib/net45/Microsoft.WindowsAzure.Storage.dll": {},
-        "bin/Debug/SmartMeetingRoom.Common.dll": {}
+        "../../packages/PInvoke.BCrypt.0.5.64/lib/net40/PInvoke.BCrypt.dll": {},
+        "../../packages/PInvoke.Kernel32.0.5.64/lib/net40/PInvoke.Kernel32.dll": {},
+        "../../packages/PInvoke.NCrypt.0.5.64/lib/net40/PInvoke.NCrypt.dll": {},
+        "../../packages/PInvoke.Windows.Core.0.5.64/lib/net20/PInvoke.Windows.Core.dll": {},
+        "../../packages/System.Spatial.5.8.2/lib/net40/System.Spatial.dll": {},
+        "../../packages/Validation.2.4.15/lib/net45/Validation.dll": {},
+        "../../packages/WindowsAzure.Storage.8.1.3/lib/net45/Microsoft.WindowsAzure.Storage.dll": {},
+        "bin/Release/SmartMeetingRoom.Common.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/SmartMeetingRoom.Common.pdb": {
+        "bin/Release/SmartMeetingRoom.Common.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true

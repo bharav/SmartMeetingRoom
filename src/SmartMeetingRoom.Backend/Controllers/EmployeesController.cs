@@ -11,21 +11,21 @@ using Newtonsoft.Json;
 
 namespace SmartMeetingRoom.Backend.Controllers
 {
-
     [Route("api/[controller]")]
-    public class EmployeeController : Controller
+    public class EmployeesController : Controller
     {
-        private DocumentDbService _ddbService;
+        private MongoDBService _ddbService;
 
-        public EmployeeController(DocumentDbService ddBServices)
+        public EmployeesController(MongoDBService ddBServices)
         {
             _ddbService = ddBServices;
         }
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
+        // GET: api/values
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2" };
+        }
 
         // GET api/values/5
         [HttpGet("{id}")]
@@ -33,10 +33,10 @@ namespace SmartMeetingRoom.Backend.Controllers
         {
             Employee emp = await _ddbService.GetEmployeeById(id);
             HttpContext.Response.StatusCode = 201;
-            return Json(emp);
+            return Json(emp);           
         }
 
-        [Route("api/employee")]
+        // POST api/values
         [HttpPost]
         public async Task<IActionResult> Register([FromBody]Employee value)
         {
@@ -47,16 +47,6 @@ namespace SmartMeetingRoom.Backend.Controllers
             });
         }
 
-        //// PUT api/values/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
-
-        //// DELETE api/values/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+      
     }
 }

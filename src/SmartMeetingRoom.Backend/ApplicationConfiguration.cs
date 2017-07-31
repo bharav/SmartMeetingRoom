@@ -15,6 +15,9 @@ namespace SmartMeetingRoom.Backend
             CalendersCollectionName = configuration["DocumentDb:calenderCollection"];
             IotHubConnectionString = configuration["IotHub:connectionString"];
             StorageConnectionString = configuration["Storage:connectionString"];
+            MongoDBConnectionString = configuration["MongoDB:connectionString"];
+            IsMongoSSL = bool.Parse(configuration["MongoDB:isMongoSSL"]);
+            MongoDBDatabaseName = configuration["MongoDB:databaseName"];
         }
 
         public string Endpoint { get; }
@@ -25,5 +28,12 @@ namespace SmartMeetingRoom.Backend
         public string CalendersCollectionName { get; }
         public string IotHubConnectionString { get; }
         public string StorageConnectionString { get; }
+        public string MongoDBConnectionString { get; }
+        public bool IsMongoSSL { get; }
+        public string MongoDBDatabaseName { get; }
+        
+
+            
+            
     }
 }

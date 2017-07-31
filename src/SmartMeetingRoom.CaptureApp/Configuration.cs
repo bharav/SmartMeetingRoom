@@ -14,12 +14,12 @@
     {
         //public static string BackendUrl => "http://smrtmeetdev-backendi7v3j2pn2fltq.azurewebsites.net/";
         public static string BackendUrl => "http://localhost:53673";
-        public static string IotHubUrl => "smartmeetingiothub.azure-devices.net";
+        public static string IotHubUrl => "smrtmeetingIoTHub.azure-devices.net";
         public static string StorageConnectionString
             =>
-            "DefaultEndpointsProtocol=https;AccountName=smrtmeetdevi7v3j2pn2fltq;AccountKey=Sr4wPu8eMQWrEiqhAs5v0PTw64CmSldbEwatSmbnXIujKWbep2CWefoVGlDZhCYOQguGzrNWr1gY210eaPI9gA=="
+            "DefaultEndpointsProtocol=https;AccountName=smrtmeetdevhofio3ys3jhne;AccountKey=afhxNu4Sz2eDJDVwNziyyjFOUOEiA4Apaf6LuDNGKBF6f1ln2PyFMgc4cDp8R85jjgwLdOkSIZzjNotcEbunPA=="
             ;
-        public static string StorageContainer => "faces";
+        public static string StorageContainer => "faces/9abfd1aa-a701-9f3f-f72d-84496ed34b74";
 
         string IConfiguration.IotHubUrl
         {

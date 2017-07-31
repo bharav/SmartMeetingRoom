@@ -22,18 +22,18 @@ namespace SmartMeetingRoom.Azure.Initializer
         static void Main(string[] args)
         {
             Console.WriteLine("Creating clients...");
-            documentClient = new DocumentClient(new Uri(ConfigurationManager.AppSettings["DocumentDbEndpoint"]), ConfigurationManager.AppSettings["DocumentDbKey"]);
+            //documentClient = new DocumentClient(new Uri(ConfigurationManager.AppSettings["DocumentDbEndpoint"]), ConfigurationManager.AppSettings["DocumentDbKey"]);
             faceClient = new FaceServiceClient(ConfigurationManager.ConnectionStrings["FaceApiKey"].ConnectionString);
-            storageAccount = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString);
+           // storageAccount = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString);
 
             Console.WriteLine("Initializing DocumentDB...");
-            InitializeDocumentDb().Wait();
+            //InitializeDocumentDb().Wait();
 
             Console.WriteLine("Initializing Face recognition service...");
             InitializeFaceRecognitionAsync().Wait();
 
             Console.WriteLine("Initializing Storage...");
-            InitializeStorageAsync().Wait();
+            //InitializeStorageAsync().Wait();
 
             Console.WriteLine("Done.");
             Console.ReadKey();

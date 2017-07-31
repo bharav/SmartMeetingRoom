@@ -14,7 +14,8 @@ namespace SmartMeetingRoom.Common.Services
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-            _container = blobClient.GetContainerReference(containerName);
+            _container = blobClient.GetContainerReference(containerName+ "/9abfd1aa-a701-9f3f-f72d-84496ed34b74");
+            
         }
 
         public MemoryStream DownloadBlockBlob(string blobName)

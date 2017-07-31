@@ -17,6 +17,9 @@ namespace SmartMeetingRoom.WebJob
             DatabaseName = ConfigurationManager.AppSettings["DocumentDBDatabaseName"];
             IotHubConnectionString = ConfigurationManager.AppSettings["IotHubConnectionString"];
             StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
+            MongoDBConnectionString = ConfigurationManager.AppSettings["MongoDBConnectionString"];
+            MongoDBDatabaseName = ConfigurationManager.AppSettings["MongoDBDatabaseName"];
+            IsMongoSSL = bool.Parse(ConfigurationManager.AppSettings["IsMongoSSL"]);
             DevicesCollectionName = "devices";
             EmployeesCollectionName = "employees";
             CalendersCollectionName = "calenders";
@@ -31,5 +34,8 @@ namespace SmartMeetingRoom.WebJob
         public string CalendersCollectionName { get; }
         public string IotHubConnectionString { get; }
         public string StorageConnectionString { get; }
+        public string MongoDBConnectionString { get; }
+        public string MongoDBDatabaseName { get; }
+        public bool IsMongoSSL { get; }
     }
 }

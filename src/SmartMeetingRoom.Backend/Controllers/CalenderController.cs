@@ -13,9 +13,9 @@ namespace SmartMeetingRoom.Backend.Controllers
     
     public class CalenderController : Controller
     {
-        private DocumentDbService _ddbService;
+        private MongoDBService _ddbService;
 
-        public CalenderController(DocumentDbService ddbServices) {
+        public CalenderController(MongoDBService ddbServices) {
             _ddbService = ddbServices;
         }
 

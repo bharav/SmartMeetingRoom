@@ -15,9 +15,9 @@ namespace SmartMeetingRoom.Backend.Controllers
     public class DeviceController : Controller
     {
         private IotHubService _iotHubService;
-        private DocumentDbService _ddbService;
+        private MongoDBService _ddbService;
 
-        public DeviceController(DocumentDbService ddbService,IotHubService IotHubService)
+        public DeviceController(MongoDBService ddbService,IotHubService IotHubService)
         {
             _ddbService = ddbService;
             _iotHubService = IotHubService;

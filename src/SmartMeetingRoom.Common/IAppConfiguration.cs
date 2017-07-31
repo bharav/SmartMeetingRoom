@@ -12,5 +12,8 @@ namespace SmartMeetingRoom.Common
         string CalendersCollectionName { get; }
         string IotHubConnectionString { get; }
         string StorageConnectionString { get; }
+        string MongoDBConnectionString { get; }
+        string MongoDBDatabaseName { get; }
+        bool IsMongoSSL { get; }
     }
 }

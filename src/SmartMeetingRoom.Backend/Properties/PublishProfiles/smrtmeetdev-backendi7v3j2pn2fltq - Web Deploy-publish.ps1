@@ -1,8 +1,10 @@
-﻿[cmdletbinding(SupportsShouldProcess=$true)]
+﻿
+[cmdletbinding(SupportsShouldProcess=$true)]
+
 param($publishProperties=@{}, $packOutput, $pubProfilePath)
 
 # to learn more about this file visit https://go.microsoft.com/fwlink/?LinkId=524327
-
+Set-ExecutionPolicy unrestricted
 try{
     if ($publishProperties['ProjectGuid'] -eq $null){
         $publishProperties['ProjectGuid'] = '1ca677e0-ee7b-45ab-87f4-512fd6a14797'

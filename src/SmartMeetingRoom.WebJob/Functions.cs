@@ -23,7 +23,7 @@ namespace SmartMeetingRoom.WebJob
 
         private const string personGroupId = "emcappemployee";
 
-        private static DocumentDbService ddbService;
+        private static MongoDBService ddbService;
         private static FaceApiService faceApiService;
         private static StorageService storageService;
 
@@ -33,7 +33,7 @@ namespace SmartMeetingRoom.WebJob
         private static void InitializeServices()
         {
             IAppConfiguration config = new AppConfiguration();
-            ddbService = new DocumentDbService(config);
+            ddbService = new MongoDBService(config);
             faceApiService = new FaceApiService(ConfigurationManager.AppSettings["FaceApiSubscriptionKey"]);
             storageService =
                 new StorageService(ConfigurationManager.ConnectionStrings["AzureWebJobsStorage"].ConnectionString,
@@ -43,7 +43,7 @@ namespace SmartMeetingRoom.WebJob
         // on an Azure Queue called queue.
         public static async void ProcessQueueMessage([ServiceBusTrigger("event_queue")] BrokeredMessage message, TextWriter log)
         {
-
+           // message.Complete();
             InitializeServices();
             Debug.Write(message);
             log.WriteLine(message);
@@ -205,7 +205,7 @@ namespace SmartMeetingRoom.WebJob
                 await faceApiService.TrainPersonGroupAsync(personGroupId);
             }
             faceStream.Dispose();
-            if (!registration)
+            if (registration)
             {
                 await storageService.DeleteBlockBlob($"{blobName}");
             }

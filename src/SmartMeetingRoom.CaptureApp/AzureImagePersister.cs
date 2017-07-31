@@ -56,6 +56,7 @@ namespace SmartMeetingRoom.CaptureApp
                 Message message = new Message(Encoding.ASCII.GetBytes(messageString));
 
                 await UploadImageToBlobAsync($"{data.blobName}", faceImage);
+                //await _deviceClient.UploadToBlobAsync($"{data.blobName}", faceImage);
                 Debug.WriteLine("Image uploaded.");
 
                 await _deviceClient.SendEventAsync(message);
@@ -88,7 +89,8 @@ namespace SmartMeetingRoom.CaptureApp
             string messageString = JsonConvert.SerializeObject(data);
             Message message = new Message(Encoding.ASCII.GetBytes(messageString));
 
-            await UploadImageToBlobAsync($"{data.blobName}", faceImage);
+            //await UploadImageToBlobAsync($"{data.blobName}", faceImage);
+            await _deviceClient.UploadToBlobAsync($"{data.blobName}", faceImage);
             Debug.WriteLine("Image uploaded.");
 
             await _deviceClient.SendEventAsync(message);

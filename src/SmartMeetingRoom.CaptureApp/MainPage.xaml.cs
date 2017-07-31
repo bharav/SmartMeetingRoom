@@ -143,9 +143,9 @@ namespace SmartMeetingRoom.CaptureApp
         }
 
 
-        private void StartMeeting_Click(object sender, RoutedEventArgs e)
+        private async void StartMeeting_Click(object sender, RoutedEventArgs e)
         {
-            InitializeGpio();
+            await SomeoneEntered();
 
         }
     }
